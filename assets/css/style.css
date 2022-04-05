@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary: rgb(178, 10, 44);
+  --secondary: rgb(255, 251, 213);
+  --primary-trans: rgba(0, 0, 0, 0.4);
+  --secondary-trans: rgba(0, 0, 0, 0.6);
+}
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* Style for the hero background */
+.hero {
+  background: linear-gradient(var(--secondary-trans), var(--primary-trans)),
+    url(../images/welcome.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2 {
+  background: linear-gradient(var(--secondary-trans), var(--primary-trans)),
+    url(../images/img1.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero3 {
+  background: linear-gradient(var(--secondary-trans), var(--primary-trans)),
+    url(../images/service.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.hero-heading {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.hero-subheading {
+  color: #fff;
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+}
+
+.left-sm-border {
+  width: 0.2rem;
+  background-color: #ff0202;
+  height: 100%;
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.contact-btn {
+  background-color: #ff0202 !important;
+  color: #fff !important;
+  font-weight: bold;
+  transition: ease-out 0.5s !important;
+  box-shadow: inset 0 0 0 0 #660212 !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.contact-btn:hover {
+  /* background: linear-gradient(to right, #c31432, #240b36) !important; */
+  box-shadow: inset 300px 0 0 0 #660212 !important;
+}
+
+.about-image {
+  background-image: url("../images/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.who-we-are {
+  background-color: #f1f1f1;
+  padding: 5rem;
+}
+
+.partner {
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.our-services {
+  background-color: #f1f1f1;
+  padding: 3rem;
+}
+#our-services-con {
+  width: 90%;
+}
+
+.left {
+  background: red;
+}
+
+.right {
+  background: green;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.line {
+  background-color: #ff0202;
+  height: 5px;
+  width: 30px;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+
+.partner-logo {
+  height: 70px !important;
+}
+
+.partners-logo {
+  width: 70%;
+}
+
+.partner-logo-con {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-info {
+  background: #000;
+}
+
+.nav-info .content-left {
+  background: rgb(178, 10, 44);
+}
+
+.nav-info p {
+  margin: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #000;
+}
+
+.footer-content-left {
+  background: #d3cfcf;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: rgb(178, 10, 44);
+}
+
+footer h4 {
+  color: rgb(178, 10, 44);
+}
+
+footer h6 {
+  color: rgb(131, 124, 124);
+}
+footer input {
+  width: 70%;
+}
+
+footer textarea {
+  width: 80%;
+}
+
+.overflow-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-btn img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.scroll-to-top-btn {
+  background: red;
+  height: 50px;
+  border-radius: 10px;
+  transition: ease-out 0.2s !important;
+  width: 50px;
+  display: none;
+  box-shadow: inset 0 0 0 0 #660212 !important;
+}
+
+.scroll-to-top-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 300px 0 0 0 #660212 !important;
+}
+
+.scroll-to-top-btn i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.showBtn {
+  display: flex;
+}
+
+footer .copyright {
+  background: rgb(178, 10, 44);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+/* For Section Background Styles */
+/* background: linear-gradient(to right, #E9E4F0, #D3CCE3); */
+
+/* For my Footer background Styles */
+/* background: linear-gradient(to right, #6f0000, #200122); */
+
+/* My Style for Overlay */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(61, 7, 7); /* Black fallback color */
+  background-color: rgba(61, 7, 7, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.category-image {
+  background: rgba(178, 10, 44, 0.1);
+  border-radius: 20px;
+  padding: 20px 20px 30px 20px;
+  height: 200px;
+}
+
+.category-image img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.category .name {
+  background: rgb(178, 10, 44);
+  display: inline;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* For Laptop devices and above */
+@media screen and (min-width: 992px) {
+  .hero-lg-content {
+    align-items: flex-start;
+    padding: 0 5rem;
+  }
+
+  .hero-heading {
+    width: 60%;
+  }
+}
+
+/* For Tablet devices */
+@media screen and (max-width: 991px) {
+  .who-we-are {
+    padding: 3rem;
+  }
+
+  .partner {
+    background-color: #fff;
+    padding: 3rem;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .hero-md-content {
+    align-items: flex-start;
+    padding: 0 3rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    width: 70%;
+    line-height: 2.5rem;
+  }
+
+  .hero-subheading {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  .who-we-are {
+    padding: 3rem 1rem;
+  }
+
+  .partner {
+    padding: 2rem 1rem;
+  }
+
+  .our-services {
+    padding: 1rem;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .hero-sm-content {
+    align-items: flex-start;
+    padding: 0 1.5rem;
+  }
+
+  .hero-heading {
+    font-size: 1.5rem;
+    width: 90%;
+    line-height: 2.5rem;
+  }
+
+  .hero-subheading {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  /* .contact-btn {
+    background-color: #ff0202 !important;
+    color: #fff !important;
+    font-weight: bold;
+    transition: ease-out 0.5s !important;
+    box-shadow: inset 0 0 0 0 #660212 !important;
+    outline: none !important;
+    border: none !important;
+  } */
+}
