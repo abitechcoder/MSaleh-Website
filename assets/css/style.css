@@ -10,10 +10,11 @@
 *,
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  padding: 0;
+  padding: 117px 0 0 0;
   margin: 0;
   font-family: "Oswald", sans-serif !important;
   overflow-x: hidden;
@@ -252,6 +253,12 @@ footer textarea {
 
 .showBtn {
   display: flex;
+}
+
+input[type="text"],
+textarea {
+  background: #fff;
+  padding: 10px;
 }
 
 footer .copyright {

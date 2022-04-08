@@ -18,79 +18,84 @@
     />
   </head>
   <body>
-    <div class="nav-info">
-      <div class="d-flex flex-column flex-md-row justify-content-md-between">
-        <div class="content-left px-2 py-2 px-md-5 py-md-2">
-          <p>Monday - Saturday <span class="ms-1 ms-md-3">8AM - 5PM</span></p>
-        </div>
-        <div class="d-flex py-2 ps-2">
-          <p class="me-md-5 me-2">
-            <i class="bi bi-telephone-fill me-1 me-md-2"></i>+234 (0)8033102102
-          </p>
-          <p class="me-md-5">
-            <i class="bi bi-envelope-fill ms-2 me-1 mx-md-2"></i
-            >nabil@msalehgroup.com
-          </p>
+    <div class="fixed-top">
+      <div class="nav-info">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+          <div class="content-left px-2 py-2 px-md-5 py-md-2">
+            <p>Monday - Saturday <span class="ms-1 ms-md-3">8AM - 5PM</span></p>
+          </div>
+          <div class="d-flex py-2 ps-2">
+            <p class="me-md-5 me-2">
+              <i class="bi bi-telephone-fill me-1 me-md-2"></i>+234
+              (0)8033102102
+            </p>
+            <p class="me-md-5">
+              <i class="bi bi-envelope-fill ms-2 me-1 mx-md-2"></i
+              >nabil@msalehgroup.com
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/logo.png" alt="M.Saleh Logo" class="logo" />
-        </a>
-        <button class="navbar-toggler" type="button" onclick="openNav()">
-          <!-- data-bs-toggle="collapse"
+      <nav class="navbar navbar-expand-lg navbar-light bg-light st">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/logo.png"
+              alt="M.Saleh Logo"
+              class="logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" onclick="openNav()">
+            <!-- data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
           aria-controls="navbarContent"
           aria-expanded="false"
           aria-label="Toggle navigation" -->
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
-          <!-- Button to close the overlay navigation -->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
 
-          <!-- Overlay content -->
-          <div class="overlay-content">
-            <a href="#">Who We Are</a>
-            <a href="#">Our Products</a>
-            <a href="#">Our Services</a>
-            <a href="#">Contact Us</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="#about">Who We Are</a>
+              <a href="#products">Our Products</a>
+              <a href="#services">Our Services</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#about">Who We Are</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#products">Our Products</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#services">Our Services</a>
+              </li>
+            </ul>
+            <a href="#" class="btn contact-btn ms-5">Contact Us</a>
           </div>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#">Who We Are</a>
-            </li>
-            <li class="nav-item me-4">
-              <a class="nav-link" href="#">Our Products</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link" href="#">Our Services</a>
-            </li>
-          </ul>
-          <a href="#" class="btn contact-btn ms-5">Contact Us</a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- My Carousel -->
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide"
-      data-ride="carousel"
-    >
+    <div id="home" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="10000">
           <div class="hero hero-sm-content hero-md-content hero-lg-content">
             <h1 class="hero-heading mb-lg-4">
               Welcome to <br />M.Saleh & Co. Ltd.
@@ -101,7 +106,7 @@
             <a href="#" class="btn contact-btn mt-md-2">Contact Us</a>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="2000">
           <div class="hero2 hero-sm-content hero-md-content hero-lg-content">
             <h2 class="hero-subheading d-flex align-items-center">
               <span class="left-sm-border"></span>High Quality
@@ -126,7 +131,7 @@
       </div>
     </div>
 
-    <section class="who-we-are">
+    <section class="who-we-are" id="about">
       <div class="container who-we-are-con">
         <div class="row flex-lg-row flex-md-column-reverse">
           <div class="col-12 col-lg-5">
@@ -172,7 +177,7 @@
     </section>
 
     <!-- Our Products section -->
-    <section class="partner">
+    <section class="partner" id="products">
       <div
         class="section-heading mb-5 d-flex flex-column justify-content-center align-items-center"
       >
@@ -383,7 +388,7 @@
     </section>
     <!-- End of partner section -->
 
-    <section class="our-services">
+    <section class="our-services" id="services">
       <div
         class="section-heading mb-5 d-flex flex-column justify-content-center align-items-center"
       >
