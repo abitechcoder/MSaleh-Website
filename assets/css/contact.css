@@ -1,0 +1,44 @@
+#contact-header .row {
+  height: 300px;
+}
+
+#contact-header {
+  background-color: rgba(108, 99, 255, 0.2);
+}
+
+.contact-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgb(108, 99, 255);
+}
+
+.contact-img {
+  background-image: url("../images/contact-svg.svg");
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Small devices */
+@media screen and (max-width: 767px) {
+  .con-d-none {
+    display: none;
+  }
+  .contact-heading {
+    font-size: 1.7rem;
+  }
+  #contact-header .row {
+    height: 200px;
+    margin-top: 35px;
+  }
+
+  #contact-header {
+    background-image: url("../images/contact-svg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -29px -37px;
+    height: 100%;
+  }
+}
