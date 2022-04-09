@@ -21,6 +21,22 @@
   background-position: center;
 }
 
+.card i {
+  color: #b20a2c;
+}
+
+.card h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #b20a2c;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  height: 200px;
+}
+
 /* Small devices */
 @media screen and (max-width: 767px) {
   .con-d-none {
