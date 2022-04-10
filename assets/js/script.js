@@ -10,15 +10,13 @@ function closeNav() {
 
 // Get the Scroll to top button
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-console.log(scrollToTopBtn);
 // Get the root element of the document
 var rootElement = document.documentElement;
 
 function handleScroll() {
   // Do something on scroll
   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-  console.log(scrollTotal);
-  console.log(rootElement.scrollTop / scrollTotal);
+
   if (rootElement.scrollTop / scrollTotal > 0.7) {
     // show button
     scrollToTopBtn.style.display = "flex";
