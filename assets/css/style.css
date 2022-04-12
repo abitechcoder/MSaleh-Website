@@ -256,6 +256,7 @@ footer textarea {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   background: #fff;
   padding: 10px;
@@ -355,6 +356,10 @@ footer .copyright {
 
 .text-justify {
   text-align: justify;
+}
+
+#contact_alert {
+  display: none;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

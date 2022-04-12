@@ -1,0 +1,51 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  font-size: 15rem;
+  color: green;
+}
+
+.confirmation {
+  width: 60%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.confirmation h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .check {
+    font-size: 10rem;
+    color: green;
+  }
+
+  .confirmation {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .confirmation h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+}

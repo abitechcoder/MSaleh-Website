@@ -1,3 +1,10 @@
+// Get all inputs in Contact Us Form
+const contact_name = document.getElementById("name");
+const contact_email = document.getElementById("email");
+const contact_message = document.getElementById("message");
+const contact_form = document.getElementById("contactForm");
+const contact_alert = document.getElementById("contact_alert");
+
 /* Open when someone clicks on the span element */
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -39,3 +46,43 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener("click", scrollToTop);
 
 document.addEventListener("scroll", handleScroll);
+
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   const res = await fetch(
+//     "https://formsubmit.co/ajax/abiolaolalekan39@gmail.com",
+//     {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//         Accept: "application/json",
+//       },
+//       body: JSON.stringify({
+//         name: contact_name.value,
+//         email: contact_email.value,
+//         message: contact_message.value,
+//       }),
+//     }
+//   )
+//     .then((response) => {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then((data) => {
+//       if (data.success == "true") {
+//         contact_name.value = "";
+//         contact_email.value = "";
+//         contact_message.value = "";
+//       }
+//     })
+//     .catch((error) => console.log(error));
+// };
+
+// add an event listener to the form submit btn
+// contact_form.addEventListener("submit", handleSubmit);
+
+function isFormLoaded() {
+  contact_name.value = "";
+  contact_email.value = "";
+  contact_message.value = "";
+}

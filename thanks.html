@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.Saleh & Co. Ltd</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/thanks.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="fixed-top">
+      <div class="nav-info">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+          <div class="content-left px-2 py-2 px-md-5 py-md-2">
+            <p>Monday - Saturday <span class="ms-1 ms-md-3">8AM - 5PM</span></p>
+          </div>
+          <div class="d-flex justify-content-sm-between py-2 ps-2">
+            <p class="me-md-5">
+              <i class="bi bi-telephone-fill me-1 me-md-2"></i>+234
+              (0)8033102102
+            </p>
+            <p class="me-md-5">
+              <i class="bi bi-envelope-fill ms-2 me-1 mx-md-2"></i
+              >nabil@msalehgroup.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light st">
+        <div class="container">
+          <a class="navbar-brand" href="./">
+            <img
+              src="./assets/images/logo.png"
+              alt="M.Saleh Logo"
+              class="logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" onclick="openNav()">
+            <!-- data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation" -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="./#about">Who We Are</a>
+              <a href="./#products">Our Products</a>
+              <a href="./#services">Our Services</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="./#about">Who We Are</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./#products">Our Products</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="./#services">Our Services</a>
+              </li>
+            </ul>
+            <a href="./contact.html" class="btn contact-btn ms-5">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <main>
+      <div class="confirmation">
+        <i class="bi bi-check-circle check"></i>
+        <h2>Thanks for contacting us. We will get in touch soon.</h2>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-xs-6 col-md-6 footer-content-left px-5 py-3">
+            <a class="navbar-brand" href="./">
+              <img
+                src="./assets/images/logo.png"
+                alt="M.Saleh Logo"
+                class="logo mb-4"
+              />
+            </a>
+            <p class="mb-4">
+              M.Saleh & Co. Limited, is one of the power generation companies in
+              Nigeria which was Established in 1957, with the objective of
+              carrying out business of sales, servicing, maintenance,
+              overhauling and rentals of diesel power generating sets
+              contributing to the development of the power sector in Nigerian
+              economy.
+            </p>
+
+            <p class="">
+              <i class="bi bi-telephone-fill me-2"></i>+234 (0)8033102102
+            </p>
+            <p class="">
+              <i class="bi bi-envelope-fill me-2"></i>nabil@msalehgroup.com
+            </p>
+          </div>
+          <div class="col-lg-8 col-xs-6 col-md-6 px-5 py-3 row">
+            <div class="footer-links col-lg-5">
+              <h4 class="mb-4">Useful Links</h4>
+              <a href="./">Home</a>
+              <a href="./#about">Who We Are</a>
+              <a href="./#products">Our Products</a>
+              <a href="./#services">Our Services</a>
+              <a href="./contact.html">Contact Us</a>
+            </div>
+            <div class="footer-form col-lg-6">
+              <div class="mb-4">
+                <h4>Contact Us</h4>
+                <h6>Send us a message</h6>
+              </div>
+              <form
+                action="https://formsubmit.co/abiolaolalekan39@gmail.com"
+                method="POST"
+                id="contactForm"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Email from M.Saleh Website"
+                />
+                <input
+                  type="hidden"
+                  name="_cc"
+                  value="abiolaolalekan39@ymail.com,abiolaolalekan39@outlook.com"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/thanks.html"
+                />
+                <input type="text" name="_honey" style="display: none" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
+                <p>
+                  <input
+                    type="text"
+                    placeholder="Your Fullname"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </p>
+                <textarea
+                  placeholder="Your message"
+                  rows="4"
+                  name="message"
+                  id="message"
+                  required
+                ></textarea
+                ><br />
+                <button class="btn btn-danger mt-2" type="submit" id="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; 2022 M.Saleh & Co. Ltd</div>
+      <div class="overflow-btn">
+        <div class="whatsapp-btn">
+          <a href="https://api.whatsapp.com/send?phone=2348033102102"
+            ><img src="./assets/images/whatsapp.png" alt=""
+          /></a>
+        </div>
+        <div
+          class="scroll-to-top-btn justify-content-center align-items-center mt-2"
+          id="scrollToTopBtn"
+        >
+          <i class="bi bi-arrow-bar-up"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

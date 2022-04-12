@@ -17,7 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
   </head>
-  <body>
+  <body onload="isFormLoaded()">
     <div class="fixed-top">
       <div class="nav-info">
         <div class="d-flex flex-column flex-md-row justify-content-md-between">
@@ -469,11 +469,56 @@
                 <h4>Contact Us</h4>
                 <h6>Send us a message</h6>
               </div>
-              <form action="">
-                <p><input type="text" placeholder="Your Fullname" /></p>
-                <p><input type="text" placeholder="Your Email" /></p>
-                <textarea placeholder="Your message" rows="4"></textarea><br />
-                <button class="btn btn-danger mt-2">Submit</button>
+              <!-- Submit forms by using formsubmit.co -->
+              <form
+                action="https://formsubmit.co/abiolaolalekan39@gmail.com"
+                method="POST"
+                id="contactForm"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Email from M.Saleh Website"
+                />
+                <input
+                  type="hidden"
+                  name="_cc"
+                  value="abiolaolalekan39@ymail.com,abiolaolalekan39@outlook.com"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/thanks.html"
+                />
+                <input type="text" name="_honey" style="display: none" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
+                <p>
+                  <input
+                    type="text"
+                    placeholder="Your Fullname"
+                    name="name"
+                    id="name"
+                  />
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    name="email"
+                    id="email"
+                  />
+                </p>
+                <textarea
+                  placeholder="Your message"
+                  rows="4"
+                  name="message"
+                  id="message"
+                ></textarea
+                ><br />
+                <button class="btn btn-danger mt-2" type="submit" id="submit">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
