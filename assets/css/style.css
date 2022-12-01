@@ -224,6 +224,7 @@ footer textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 5;
 }
 
 .whatsapp-btn img {
@@ -366,6 +367,12 @@ footer .copyright {
   background-color: #fff;
 }
 
+#gallery .smallImage {
+  height: 300px;
+  object-fit: "cover";
+  object-position: "center";
+}
+
 #gallery .smallImage:hover {
   cursor: pointer;
   filter: brightness(70%);
@@ -382,8 +389,8 @@ footer .copyright {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -409,14 +416,19 @@ footer .copyright {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
@@ -438,12 +450,19 @@ footer .copyright {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
   #caption {
     width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  #gallery .smallImage {
+    height: 250px;
+    object-fit: "cover";
+    object-position: "center";
   }
 }
 
